@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Birds Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #105e5a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .bird {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .bird:hover {
+            transform: scale(1.05);
+        }
+
+        .bird img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .bird h3 {
+            margin: 10px 0;
+            text-align: center;
+            color: #105e5a;
+        }
+
+        .bird p {
+            padding: 0 10px;
+            text-align: center;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #105e5a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Birds Gallery</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2022/07/04/17/16/dove-7301617_1280.jpg" alt="Diamond Dove">
+                <h3>Diamond Dove</h3>
+                <p>The Diamond Dove is a small, charming bird with a pale grayish-brown body and distinctive white spots on its wings. Found across Australia, they are known for their gentle cooing calls and social nature.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2020/12/31/05/02/sparrow-5875379_1280.jpg" alt="Sparrow">
+                <h3>Sparrow</h3>
+                <p>The Sparrow is a small, social bird known for its adaptability and cheerful chirping. Commonly found in urban areas, it feeds on seeds and grains, often seen foraging in flocks.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2020/04/26/09/07/bird-5094334_640.jpg" alt="Songbird">
+                <h3>Songbird</h3>
+                <p>Songbirds are known for their beautiful melodies and vocalizations. Found in diverse habitats, these birds play a crucial role in ecosystems by pollinating plants and controlling insect populations.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2023/03/28/18/24/macaw-7883883_960_720.jpg" alt="Macaw">
+                <h3>Macaw</h3>
+                <p>Macaws are large, colorful birds known for their intelligence and ability to mimic sounds. They primarily inhabit tropical rainforests.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2015/08/09/13/30/kingfisher-881594_1280.jpg" alt="Kingfisher">
+                <h3>Kingfisher</h3>
+                <p>Kingfishers are small to medium-sized birds with bright plumage and excellent fishing skills, often found near water bodies.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2020/04/30/03/26/rufous-5111261_1280.jpg" alt="Hummingbird">
+                <h3>Hummingbird</h3>
+                <p>Hummingbirds are tiny birds capable of hovering in mid-air thanks to their rapidly flapping wings, and they play a vital role in pollination.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2022/09/26/04/24/swan-7479623_1280.jpg" alt="Swan">
+                <h3>Swan</h3>
+                <p>Swans are graceful waterfowl known for their elegance and long necks, often seen gliding serenely across lakes and rivers.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2017/06/01/15/23/peafowl-2363750_1280.jpg" alt="Peacock">
+                <h3>Peacock</h3>
+                <p>Peacocks are famous for their striking iridescent feathers and elaborate courtship displays, making them one of the most beautiful birds.</p>
+            </div>
+            <div class="bird">
+                <img src="https://cdn.pixabay.com/photo/2012/09/04/21/20/penguin-56101_1280.jpg" alt="Penguin">
+                <h3>Penguin</h3>
+                <p>Penguins are flightless birds known for their distinctive tuxedo-like appearance and adaptability to cold environments, primarily found in the Southern Hemisphere.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Birds Gallery | <a href="mailto:your.email@example.com">Sadia Islam</a></p>
+    </footer>
+
+</body>
+</html>
